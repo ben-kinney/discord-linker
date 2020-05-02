@@ -1,0 +1,40 @@
+# The id of your Discord server.
+server-id: "your Discord server's id"
+client:
+  # The id of your Discord application.
+  id: "your Discord application's id"
+  # The secret key of your Discord application.
+  secret: "your Discord application's secret key"
+  # The token for your Discord bot.
+  token: "your Discord bot's token"
+web:
+  # The ip for the redirect uri.
+  external-ip: "your.ip.com"
+  # The port where the web server will be opened for verification.
+  port: 12345
+  # If this value is true, the port will not be included in the Discord redirect uri.
+  using-srv-record: false
+  # Location where the verify pages will be hosted relative to your external ip.
+  context: "/"
+  https:
+    # If this value is true, the redirect uri will be an https link.
+    enabled: false
+    # The location of your keystore.
+    key-store: "key.keystore"
+    # The password of your keystore.
+    password: "your password here"
+# If this value is true, people's Discord nicknames on the server will be dynamically updated.
+sync-names: true
+# The invite link to your server. Comment out if you only want people to be able to join through verification.
+invite-link: "invite link here for people who don't want to verify"
+ranks:
+  # If this value is true, people's ranks on the server will be synced every time they join or leave.
+  sync-enabled: true
+  # The ids of the Discord roles you want everyone to have when they are verified
+  verified-ranks:
+    - "some rank id in your Discord server here"
+    - "a second one if you want it"
+  # The mappings from Vault-supported ranking plugin's names, and the Discord role ids on your server.
+  mappings:
+    admin: "the admin rank's id in your Discord server"
+    owner: "the owner rank's id in your Discord server"

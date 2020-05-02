@@ -1,0 +1,12 @@
+name: Linker
+main: software.bens.linker.bukkit.Linker
+version: 1.0.0
+
+commands:
+  discord:
+    description: Gets a link for you to join the Discord.
+    usage: /<command>
+  redirecturi:
+    permission: linker.redirecturi
+    description: Gets the redirect uri for you to copy.
+    usage: /<command>
